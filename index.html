@@ -35,11 +35,12 @@
         <script>
             window.onload = function () {
                 const params = new URLSearchParams(window.location.search);
-                const urlResult = params.get('url') || 'https://petstore.swagger.io/v2/swagger.json';
+                const targetUrl =
+                    params.get('url') || 'https://petstore.swagger.io/v2/swagger.json';
 
                 // Begin Swagger UI call region
                 const ui = SwaggerUIBundle({
-                    url: ,
+                    url: targetUrl,
                     dom_id: '#swagger-ui',
                     deepLinking: true,
                     presets: [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset],
