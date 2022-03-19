@@ -6,4 +6,8 @@ This repo is only to allow opening Swagger on query parameters.
    ```sh
    https://alviannn.github.io/swagger-ui-params/
    ```
+   ex:
+   ```sh
+   https://alviannn.github.io/swagger-ui-params?url=<OpenAPI Spec URL>
+   ```
 1. Done.
